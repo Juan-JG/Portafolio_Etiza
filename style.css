@@ -332,8 +332,22 @@ font-weight: 400;
     height: 100%;
 }
 .nuestros-clientes_imagen {
+    display: block;
     width: 100%;
     height: 100%;
+}
+.enac, .autonoma, .aiep, .inacap {
+    display: block;
+    overflow: hidden;
+}
+.enac a,
+.autonoma a,
+.aiep a,
+.inacap a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
 }
 .enac{
     display: block;
@@ -341,6 +355,8 @@ font-weight: 400;
 .enac a:hover{
     content: url(enac_hover.png);
     transition: all 25s ease-in;
+    width: 100%;
+    height: auto;
 }
 .autonoma{
     display: block;
@@ -348,6 +364,8 @@ font-weight: 400;
 .autonoma a:hover{
     content: url(autonoma_hover.png);
     transition: all 25s ease-in;
+    width: auto;
+    height: 100%;
 }
 .aiep{
     display: block;
@@ -355,6 +373,8 @@ font-weight: 400;
 .aiep a:hover{
     content: url(aiep_hover.png);
     transition: all 25s ease-in;
+    width: 100%;
+    height: auto;
 }
 .inacap{
     display: block;
@@ -362,6 +382,8 @@ font-weight: 400;
 .inacap a:hover{
     content: url(inacap_hover.png);
     transition: all 25s ease-in;
+    width: 100%;
+    height: auto;
 }
 .casos-exito{
     display: flex;
