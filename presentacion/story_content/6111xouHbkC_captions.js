@@ -1,0 +1,1 @@
+window.globalProvideData('caption', '{"data":"1%0A00:00:00,130%20--%3E%2000:00:03,290%0AExamen%20final%20recuperativa%20y%20recalificaci%C3%B3n.%0A%0A2%0A00:00:04,900%20--%3E%2000:00:05,130%0AEvaluaciones.%0A%0A"}')

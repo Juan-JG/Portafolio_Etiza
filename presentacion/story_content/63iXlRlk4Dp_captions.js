@@ -1,0 +1,1 @@
+window.globalProvideData('caption', '{"data":"1%0A00:00:00,130%20--%3E%2000:00:01,530%0AEvaluaci%C3%B3n%20sumativa.%0A%0A2%0A00:00:02,340%20--%3E%2000:00:06,610%0ACaracterizar%20la%20gesti%C3%B3n%20presupuestaria%20de%20los%20organismos%20p%C3%BAblicos%20en%20el%20contexto%0A%0A3%0A00:00:06,610%20--%3E%2000:00:09,350%0Anacional,%20considerando%20normativa%20vigente.%0A%0A"}')
