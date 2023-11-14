@@ -25,28 +25,38 @@ body{
 
 /* Header */
 .navbar {
-    height: 200px;
+    height: auto;
     transition: all 0.5s;
+    padding: 3rem 6rem 3rem 6rem !important;
 }
-
 .nav-dark {
     color: #5D5D5D;
 }
 #navbarNav {
     justify-content: flex-end;
 }
-
+.navbar_icon{
+    display: flex;
+    content: url(etiza_logoblanco.svg);
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    height: auto;
+}
+.navbar_icon--scroll{
+    display: flex;
+    content: url(etiza_logocolor.png);
+    flex-direction: row;
+    align-items: center;
+    width: 300px;
+    height: auto;
+}
 .navbar-scrolled {
     background-color: white;
     box-shadow: 0 3px 10px rgba(0,0,0, 0.15);
 }
-
-.navbar-brand {
-    width: 100px;
-}
-
 .nav-link {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .nav-link:hover {
@@ -80,6 +90,7 @@ body{
     position: relative;
     z-index: 1;
     padding-top: 30rem;
+    padding-bottom: 5rem;
 }
 .banner--enac{
     background: url(banner_enac.png);
