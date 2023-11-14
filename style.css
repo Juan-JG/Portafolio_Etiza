@@ -355,8 +355,6 @@ font-weight: 400;
 .enac a:hover{
     content: url(enac_hover.png);
     transition: all 25s ease-in;
-    width: 100%;
-    height: auto;
 }
 .autonoma{
     display: block;
@@ -364,8 +362,6 @@ font-weight: 400;
 .autonoma a:hover{
     content: url(autonoma_hover.png);
     transition: all 25s ease-in;
-    width: auto;
-    height: 100%;
 }
 .aiep{
     display: block;
@@ -373,8 +369,6 @@ font-weight: 400;
 .aiep a:hover{
     content: url(aiep_hover.png);
     transition: all 25s ease-in;
-    width: 100%;
-    height: auto;
 }
 .inacap{
     display: block;
@@ -382,8 +376,6 @@ font-weight: 400;
 .inacap a:hover{
     content: url(inacap_hover.png);
     transition: all 25s ease-in;
-    width: 100%;
-    height: auto;
 }
 .casos-exito{
     display: flex;
