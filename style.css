@@ -912,12 +912,15 @@ textarea::placeholder {
 /* Animaciones */
 
 .animaciones {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
     background: url(animaciones_background.png);
     background-size: cover;
     background-position: center;
     padding: 10rem 0 5rem 0;
+    gap: 5rem;
 }
 
 .animaciones_titulo {
@@ -944,19 +947,17 @@ textarea::placeholder {
     line-height: normal;
     text-transform: uppercase;
 }
-
-.animaciones_video {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .contenedor-video {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+    padding: 0;
+}
+.contenedor-video iframe {
+    width: 100%;
+    height: 100%;
 }
 
 .animaciones_texto {
@@ -1005,8 +1006,8 @@ textarea::placeholder {
 }
 
 .contenedor_interactivo {
-    width: 80%;
-    height: auto;
+    width: 100%;
+    height: 800px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1017,8 +1018,13 @@ textarea::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 1200px;
+    height: 800px;
+    padding: 0;
+}
+.contenedor_genially iframe {
     width: 100%;
-    padding: 30px;
+    height: 100%;
 }
 
 .interactivo_texto {
@@ -1386,14 +1392,7 @@ textarea::placeholder {
     transform: scale(0.9);
 }
 
-/*_____________________________________________________________
-
-______________TABLET______________
-
-_________________________________________________________*/
-
-
-
+/*** --- Tablet --- ***/
 
 @media (max-width: 1024px) {
 
@@ -2228,67 +2227,49 @@ _________________________________________________________*/
         width: 100%;
         visibility: visible;
     }
-
-    /*_____________________________________________________________
-
-______________ENAC Y AUTONOMA______________
-
-_________________________________________________________*/
-
-    .pdf {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /*_____________________________________________________________
-
-______________AIEP______________
-
-_________________________________________________________*/
-
-
-    .ruta {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-
-    .rutadeaprendizaje {
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .story {
-        width: 700px;
-        height: 400px;
-    }
-
-    /*_____________________________________________________________
-
-______________Inacap______________
-
-_________________________________________________________*/
-
-    .texto-banner img {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-
+/* ENAC */
+.contenedor-video {
+    width: 100%;
+    height: 500px;
+    padding: 0 !important;
 }
-
+.contenedor-video iframe {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.infografia_pdf {
+    flex-direction: column;
+}
+.apuntes_pdf {
+    flex-direction: column;
+}
+/* Autonoma */
+.contenedor_interactivo {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+.contenedor_genially {
+    width: 90%;
+    height: 500px;
+    padding: 0;
+}
+/* INACAP */
+.logo--inacap {
+    width: 90%;
+}
+.logo--inacap img {
+    width: 100%;
+}
+.articulate_pdf {
+    flex-direction: column;
+}
+/* AIEP */
+.ruta_contenedor {
+    width: 90%;
+    height: 600px;
+}
 /*_____________________________________________________________
 
 ______________T E L E F O N O______________
@@ -3156,63 +3137,273 @@ _________________________________________________________*/
         width: 100%;
         visibility: visible;
     }
-
-    /*_____________________________________________________________
-        
-        ______________ENAC Y AUTONOMA______________
-        
-        _________________________________________________________*/
-
-    .pdf {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /*_____________________________________________________________
-        
-        ______________AIEP______________
-        
-        _________________________________________________________*/
-
-
-    .ruta {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    }
-
-    .rutadeaprendizaje {
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .story {
-        width: 700px;
-        height: 400px;
-    }
-
-    /*_____________________________________________________________
-        
-        ______________Inacap______________
-        
-        _________________________________________________________*/
-
-    .texto-banner img {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-    }
-
-
+    /* ENAC */
+.banner--enac {
+    height: 300px;
 }
+.logo--enac {
+    width: 80%;
+}
+.logo--enac img {
+    width: 100%;
+}
+.enac_descripcion {
+    width: 100%;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.enac_descripcion p {
+    font-size: 18px;
+}
+.animaciones {
+    gap: 1rem;
+}
+.animaciones_titulo {
+    text-align: center;
+}
+
+.animaciones_titulo span {
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.animaciones_titulo h2 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.animaciones_texto {
+    width: 100%;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.animaciones_texto p{
+    font-size: 18px;
+}
+.contenedor-video {
+    width: 100%;
+    height: 400px;
+    padding: 0 !important;
+}
+.contenedor-video iframe {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.interactivo {
+    padding: 5rem 1rem 5rem 1rem;
+    gap: 1rem;
+}
+.interactivo_titulo {
+    text-align: center;
+    padding: 0;
+}
+.interactivo_titulo h2 {
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.interactivo_texto {
+    width: 100%;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.interactivo_texto p{
+    font-size: 18px;
+}
+.contenedor_interactivo {
+    width: 100%;
+    height: 400px;
+}
+.contenedor_genially {
+    width: 100%;
+    height: 100%;
+}
+.contenedor_genially iframe {
+    height: 100%;
+    width: 100%;
+}
+.infografia {
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 1rem;
+}
+.infografia_titulo {
+    text-align: center;
+    padding: 0;
+}
+.infografia_titulo h2 {
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.infografia_texto {
+    width: 100%;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.infografia_texto p{
+    font-size: 18px;
+}
+.infografia_pdf {
+    flex-direction: column;
+}
+.contenedor_pdf {
+    width: 90%;
+}
+.apuntes {
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 1rem;
+}
+.apuntes_titulo {
+    text-align: center;
+    padding: 0;
+}
+.apuntes_titulo h2 {
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.apuntes_titulo span {
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.apuntes_texto {
+    width: 100%;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.apuntes_texto p{
+    font-size: 18px;
+}
+.apuntes_pdf {
+    flex-direction: column;
+}
+/* Autonoma */
+.banner--autonoma {
+    height: 300px;
+}
+.logo--autonoma {
+    width: 80%;
+}
+.logo--autonoma img {
+    width: 100%;
+}
+.autonoma_descripcion {
+    width: 100%;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.autonoma_descripcion p {
+    font-size: 18px;
+}
+.contenedor_interactivo {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+.contenedor_genially {
+    width: 90%;
+    height: 500px;
+    padding: 0;
+}
+/* INACAP */
+.logo--inacap {
+    width: 90%;
+}
+.logo--inacap img {
+    width: 100%;
+}
+.articulate {
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 1rem;
+}
+.articulate_titulo {
+    text-align: center;
+    padding: 0;
+}
+.articulate_titulo h2 {
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.articulate_titulo span {
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.articulate_texto {
+    width: 100%;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.articulate_texto p{
+    font-size: 18px;
+}
+.articulate_pdf {
+    flex-direction: column;
+}
+/* AIEP */
+.logo--aiep {
+    width: 90%;
+}
+.logo--aiep img {
+    width: 100%;
+}
+.ruta_contenedor {
+    width: 90%;
+    height: 600px;
+}
+.ruta {
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 1rem;
+}
+.ruta_titulo {
+    text-align: center;
+    padding: 0;
+}
+.ruta_titulo h2 {
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.ruta_titulo span {
+    font-family: Poppins;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.ruta_texto {
+    width: 100%;
+    padding: 2rem 1rem 2rem 1rem;
+}
+.ruta_texto p{
+    font-size: 18px;
+}
+}}
