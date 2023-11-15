@@ -1182,23 +1182,49 @@ textarea::placeholder {
 
 /* AIEP */
 
-.ruta {
-    height: auto;
-    background: url(imagen3.png);
+.banner--aiep {
+    background: url(banner_inacap.png);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
-    background-position: center;
-    padding-top: 30px;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    z-index: 1;
+    padding-top: 30rem;
+    padding-bottom: 20rem;
 }
 
-.titulo_ruta {
+.logo--aiep {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    padding: 20px 0 40px 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.titulo_ruta h2 {
-    color: #fff;
+.ruta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 3rem 0 5rem 0;
+    gap: 2rem;
+}
+
+.ruta_titulo {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.ruta_titulo h2 {
+    color: #5E5E5E;
     text-align: center;
     font-family: Poppins;
     font-size: 60px;
@@ -1208,8 +1234,8 @@ textarea::placeholder {
     text-transform: uppercase;
 }
 
-.titulo_ruta span {
-    color: #fff;
+.ruta_titulo span {
+    color: #21B8CC;
     font-family: Poppins;
     font-size: 60px;
     font-style: normal;
@@ -1217,37 +1243,38 @@ textarea::placeholder {
     line-height: normal;
     text-transform: uppercase;
 }
-
-.rutadeaprendizaje {
-    width: 100%;
-    height: auto;
+.ruta_contenedor {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 1200px;
+    height: 800px;
+    gap: .5rem;
+    justify-content: center;
     align-items: center;
 }
-
-.story {
-    width: 1200px;
-    height: 660px;
-}
-
-.texto_ruta {
+.ruta_story {
     width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.ruta_texto {
     display: flex;
     flex-direction: column;
-    padding: 50px 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 4rem 3rem 4rem;
+    width: 100%;
 }
 
-.texto_ruta p {
-    color: #FFF;
+.ruta_texto p {
+    color: #6B6B6B;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 162.5%;
-    /* 32.5px */
 }
-
 
 /* Inacap */
 
