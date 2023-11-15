@@ -113,11 +113,6 @@ body {
     background-size: cover;
 }
 
-.banner--enac {
-    background: url(banner_enac.png);
-    background-size: cover;
-}
-
 .banner--autonoma {
     background: url(banner_autonoma.png);
     background-size: cover;
@@ -829,46 +824,67 @@ ENAC y AUTONOMA______________
 
 _________________________________________________________*/
 
-/*descripcion*/
-
-.descripción {
+.banner--enac {
+    background: url(banner_enac.png);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    padding: 100px 70px;
-
-
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    z-index: 1;
+    padding-top: 30rem;
+    padding-bottom: 20rem;
 }
 
-.descripción p {
+.logo--enac {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* Descripcion ENAC */
+
+.enac_descripcion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 5rem;
+    background-color: white;
+}
+
+.enac_descripcion p {
     color: #6B6B6B;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 162.5%;
-    /* 32.5px */
-}
-
-
-/*animaciones*/
-
-.animaciones {
-    position: relative;
-    max-height: auto;
-    background: url(imagen3.png);
-    background-size: cover;
-    background-position: center;
-    padding: 30px 0 30px 0;
-}
-
-.titulo_animaciones {
     text-align: center;
 }
 
-.titulo_animaciones span {
+/* Animaciones */
+
+.animaciones {
+    width: 100%;
+    height: auto;
+    background: url(animaciones_background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0 5rem 0;
+}
+
+.animaciones_titulo {
+    text-align: center;
+}
+
+.animaciones_titulo span {
     color: #FFF;
     text-align: center;
     font-family: Poppins;
@@ -879,7 +895,7 @@ _________________________________________________________*/
     text-transform: uppercase;
 }
 
-.titulo_animaciones h2 {
+.animaciones_titulo h2 {
     color: #FFF;
     font-family: Poppins;
     font-size: 60px;
@@ -889,7 +905,7 @@ _________________________________________________________*/
     text-transform: uppercase;
 }
 
-.videos {
+.animaciones_video {
     width: 100%;
     height: auto;
     display: flex;
@@ -903,31 +919,41 @@ _________________________________________________________*/
     width: 80%;
 }
 
-.texto_animaciones {
+.animaciones_texto {
     display: flex;
     flex-direction: column;
     padding: 30px 70px;
     width: 100%;
 }
 
-.texto_animaciones p {
+.animaciones_texto p {
     color: #FFF;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 162.5%;
-    /* 32.5px */
-}
-
-/*interactivo*/
-
-.titulo_interactivo {
     text-align: center;
-    padding: 40px;
 }
 
-.titulo_interactivo h2 {
+/* Interactivo */
+
+.interactivo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10rem 0 5rem 0;
+}
+.interactivo_titulo {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.interactivo_titulo h2 {
     color: #21B8CC;
     text-align: center;
     font-family: Poppins;
@@ -938,57 +964,62 @@ _________________________________________________________*/
     text-transform: uppercase;
 }
 
-.titulo_interactivo span {
-    color: #666;
-    font-family: Poppins;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-}
-
-.cuadro_interactivo {
-    width: 100%;
+.contenedor_interactivo {
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 3rem;
 }
 
-.genially {
+.contenedor_genially {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    justify-content: center;
+    width: 100%;
     padding: 30px;
 }
 
-.texto_interactivo {
+.interactivo_texto {
     display: flex;
     flex-direction: column;
-    padding: 50px 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
     width: 100%;
 }
 
-.texto_interactivo p {
+.interactivo_texto p {
     color: #6B6B6B;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 162.5%;
-    /* 32.5px */
 }
 
 
-/*infografia*/
+/* Infografia */
 
-.titulo_infografia {
+.infografia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10rem 0 5rem 0;
+    gap: 2rem;
+}
+.infografia_titulo {
+    width: 100%;
+    height: auto;
     text-align: center;
-    padding: 40px;
+    padding-bottom: 4rem;
 }
 
-.titulo_infografia h2 {
+.infografia_titulo h2 {
     color: #21B8CC;
     text-align: center;
     font-family: Poppins;
@@ -999,43 +1030,53 @@ _________________________________________________________*/
     text-transform: uppercase;
 }
 
-.pdf {
+.infografia_pdf {
     display: flex;
-    gap: 25px;
-    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap: .5rem;
+    justify-content: space-evenly;
+    align-items: center;
 }
-
-.texto_infografia {
+.contenedor_pdf {
+    display: flex;
+    width: 400px;
+    height: auto;
+}
+.pdf_img {
+    width: 100%;
+    height: auto;
+}
+.infografia_texto {
     display: flex;
     flex-direction: column;
-    padding: 50px 70px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
     width: 100%;
 }
 
-.texto_infografia p {
+.infografia_texto p {
     color: #6B6B6B;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 162.5%;
-    /* 32.5px */
 }
 
-.pdf_cuadro img {
+.contenedor_pdf img {
     transition: transform 0.2s;
 }
 
-.pdf_cuadro img:hover {
+.contenedor_pdf img:hover {
     transform: scale(0.9);
 }
 
-
-
-
 /*apuntes*/
 
-.titulo_apuntes {
+.apuntes_titulo {
     text-align: center;
     padding: 40px;
 }
