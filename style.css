@@ -97,9 +97,7 @@ body {
 }
 
 /* Banner */
-
-.banner--home {
-    background: url(banner_home.png);
+.banner {
     background-size: cover;
     height: auto;
     position: relative;
@@ -107,28 +105,64 @@ body {
     padding-top: 30rem;
     padding-bottom: 5rem;
 }
-
-.banner--home.solid-background {
+.banner.solid-background {
     background: #21B8CC;
-    /* replace with your desired solid color */
     background-size: cover;
 }
-
+.banner.solid-background img{
+    width: 0;
+    height: 0;
+}
+.banner--home {
+    background: url(banner_home.png);
+}
+.banner--enac {
+    background: url(banner_enac.png);
+    padding-bottom: 10rem;
+}
 .banner--autonoma {
     background: url(banner_autonoma.png);
-    background-size: cover;
+    padding-bottom: 10rem;
 }
-
 .banner--aiep {
     background: url(banner_aiep.png);
-    background-size: cover;
+    padding-bottom: 10rem;
 }
-
 .banner--inacap {
     background: url(banner_inacap.png);
-    background-size: cover;
+    padding-bottom: 10rem;
 }
 
+.logo--inacap {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo--aiep {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.logo--enac {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo--autonoma {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .banner-texto {
     display: flex;
     flex-direction: column;
@@ -821,50 +855,6 @@ textarea::placeholder {
 
 /* ENAC y Autonoma */
 
-.banner--enac {
-    background: url(banner_enac.png);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    width: 100%;
-    height: 800px;
-    position: relative;
-    z-index: 1;
-    padding-top: 30rem;
-    padding-bottom: 20rem;
-}
-
-.logo--enac {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.banner--autonoma {
-    background: url(banner_autonoma.png);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    width: 100%;
-    height: 800px;
-    position: relative;
-    z-index: 1;
-    padding-top: 30rem;
-    padding-bottom: 20rem;
-}
-
-.logo--autonoma {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 /* Descripcion ENAC */
 
 .enac_descripcion {
@@ -1195,29 +1185,6 @@ textarea::placeholder {
 
 /* AIEP */
 
-.banner--aiep {
-    background: url(banner_inacap.png);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    width: 100%;
-    height: 800px;
-    position: relative;
-    z-index: 1;
-    padding-top: 30rem;
-    padding-bottom: 20rem;
-}
-
-.logo--aiep {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
 .ruta {
     display: flex;
     flex-direction: column;
@@ -1291,28 +1258,6 @@ textarea::placeholder {
 
 /* Inacap */
 
-.banner--inacap {
-    background: url(banner_inacap.png);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    width: 100%;
-    height: 800px;
-    position: relative;
-    z-index: 1;
-    padding-top: 30rem;
-    padding-bottom: 20rem;
-}
-
-.logo--inacap {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 .contenedor_interactivo--inacap {
     display: flex;
     flex-direction: column;
@@ -1513,21 +1458,25 @@ textarea::placeholder {
     .banner--enac {
         background: url(banner_enac.png);
         background-size: cover;
+        padding-bottom: 25rem;
     }
 
     .banner--autonoma {
         background: url(banner_autonoma.png);
         background-size: cover;
+        padding-bottom: 25rem;
     }
 
     .banner--aiep {
         background: url(banner_aiep.png);
         background-size: cover;
+        padding-bottom: 25rem;
     }
 
     .banner--inacap {
         background: url(banner_inacap.png);
         background-size: cover;
+        padding-bottom: 25rem;
     }
 
     .banner_texto {
@@ -2251,6 +2200,9 @@ textarea::placeholder {
         visibility: visible;
     }
 /* ENAC */
+.logo--enac {
+    padding-top: 8rem;
+}
 .contenedor-video {
     width: 100%;
     height: 500px;
@@ -2269,6 +2221,9 @@ textarea::placeholder {
 }
 
 /* Autonoma */
+.logo--autonoma {
+    padding-top: 8rem;
+}
 .contenedor_interactivo {
     width: 100%;
     height: auto;
@@ -2298,6 +2253,7 @@ textarea::placeholder {
 /* INACAP */
 .logo--inacap {
     width: 90%;
+    padding-top: 8rem;
 }
 .logo--inacap img {
     width: 100%;
@@ -2322,6 +2278,9 @@ textarea::placeholder {
     flex-direction: column;
 }
 /* AIEP */
+.logo--aiep {
+    padding-top: 8rem;
+}
 .ruta_contenedor {
     width: 90%;
     height: 600px;
@@ -2433,21 +2392,25 @@ _________________________________________________________*/
     .banner--enac {
         background: url(banner_enac.png);
         background-size: cover;
+        padding-bottom: 25rem;
     }
 
     .banner--autonoma {
         background: url(banner_autonoma.png);
         background-size: cover;
+        padding-bottom: 25rem;
     }
 
     .banner--aiep {
         background: url(banner_aiep.png);
         background-size: cover;
+        padding-bottom: 25rem;
     }
 
     .banner--inacap {
         background: url(banner_inacap.png);
         background-size: cover;
+        padding-bottom: 25rem;
     }
 
     .banner_texto {
@@ -3198,6 +3161,7 @@ _________________________________________________________*/
     height: 300px;
 }
 .logo--enac {
+    padding-top: 8rem;
     width: 80%;
 }
 .logo--enac img {
@@ -3356,6 +3320,7 @@ _________________________________________________________*/
 }
 .logo--autonoma {
     width: 80%;
+    padding-top: 8rem;
 }
 .logo--autonoma img {
     width: 100%;
@@ -3395,7 +3360,8 @@ _________________________________________________________*/
 }
 /* INACAP */
 .logo--inacap {
-    width: 90%;
+    padding-top: 8rem;
+    width: 80%;
 }
 .logo--inacap img {
     width: 100%;
@@ -3452,7 +3418,8 @@ _________________________________________________________*/
 }
 /* AIEP */
 .logo--aiep {
-    width: 90%;
+    width: 80%;
+    padding-top: 8rem;
 }
 .logo--aiep img {
     width: 100%;
