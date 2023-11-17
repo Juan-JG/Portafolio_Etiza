@@ -75,7 +75,7 @@ body {
 }
 
 .nav-link:hover {
-    color: inherit;
+    color: white;
     font-weight: bold;
 }
 #navbarNav {
@@ -109,7 +109,7 @@ body {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 .navbar-white a {
-    color: #474646;
+    color: #474646 !important;
 }
 .navbar_logo--scroll {
     display: flex;
@@ -1185,23 +1185,25 @@ textarea::placeholder {
     #navbarNav {
         justify-content: flex-end;
     }
-
-    .navbar_icon {
-        display: flex;
-        content: url(etiza_logoblanco.svg);
-        flex-direction: row;
-        align-items: center;
-        width: 10rem;
-        height: auto;
+    .navbar-blue {
+        background-color: #21B8CC !important;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .navbar-blue a {
+        color: white !important;
     }
 
-    .navbar_icon--scroll {
-        display: flex;
-        content: url(etiza_logocolor.png);
-        flex-direction: row;
-        align-items: center;
-        width: 10rem;
-    height: auto;
+    .navbar-blue i {
+        color: white;
+    }
+    .navbar-blue a:hover {
+        color: white;
+        font-weight: bold;
+    }
+    .navbar-blue--logo {
+    content: url(etiza_logoblanco.svg);
     }
 
     .nav-link {
@@ -1217,7 +1219,7 @@ textarea::placeholder {
     }
 
     .fas {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .fa-bars {
