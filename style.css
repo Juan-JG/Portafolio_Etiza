@@ -42,7 +42,7 @@ body {
 }
 .texto_gris {
     color: #6B6B6B;
-    font-size: 1.2rem;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
 }
@@ -54,9 +54,9 @@ body {
 }
 .texto_blanco {
     color: white;
-    font-size: 1.2rem;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
 }
 /* Header */
 
@@ -71,7 +71,8 @@ body {
 }
 
 .nav-link {
-    font-size: 1.5rem;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .nav-link:hover {
@@ -127,11 +128,15 @@ body {
 /* Banner */
 .banner {
     background-size: cover;
-    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60rem;
+    width: 100%;
     position: relative;
     z-index: 1;
-    padding-top: 30rem;
-    padding-bottom: 5rem;
+    padding-top: 15rem;
+    padding-bottom: 2rem;
 }
 .banner.solid-background {
     background: #21B8CC;
@@ -143,6 +148,7 @@ body {
 }
 .banner--home {
     background: url(banner_home.png);
+    
 }
 .banner--enac {
     background: url(banner_enac.png);
@@ -209,16 +215,18 @@ body {
 }
 
 .banner_texto--1 {
-    font-weight: 400;
+    font-size: 2.25rem;
+    font-weight: bold;
 }
 
 .banner_texto--2 {
-    font-weight: 700;
+    font-size: 2.25rem;
+    font-weight: bold;
 }
 
 .banner_texto--3 {
-    font-size: 100px;
-    font-weight: 700;
+    font-size: 5.25rem;
+    font-weight: bolder;
 }
 
 /* Quienes somos */
@@ -227,21 +235,31 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: auto;
+    height: 55rem;
     justify-content: center;
     align-items: center;
     background: white;
-    padding: 9rem 0 9rem 0;
+    padding: 0;
     gap: 3rem;
 }
-
+.quienes-somos_imagen {
+    display: flex;
+    flex-direction: column;
+    background-image: url(quienes-somos.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    width: 60%;
+    background-color: black;
+}
 .quienes-somos_texto {
     display: flex;
     flex-direction: column;
     height: auto;
-    text-align: justify;
+    text-align: center;
     width: 40%;
-    padding: 10px;
+    padding: 5rem 2rem 5rem 2rem;
     gap: 30px;
 }
 .titulo_hero h1 {
@@ -266,16 +284,6 @@ body {
     line-height: normal;
     text-transform: uppercase;
 }
-.quienes-somos_imagen {
-    display: block;
-    width: 30%;
-    height: 100%;
-}
-.quienes-somos_imagen img {
-    width: 100%;
-    height: 100%;
-    border-radius: 2rem;
-}
 
 /* Servicios */
 
@@ -290,7 +298,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 8rem 3rem 8rem 3rem;
+    padding: 10rem 3rem 8rem 3rem;
     gap: 1rem;
 }
 
@@ -300,7 +308,7 @@ body {
     align-items: center;
     width: 80%;
     height: auto;
-    padding: 1rem;
+    padding: .5rem;
     gap: 2rem;
 }
 
@@ -309,11 +317,12 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background: #6B6B6B;
-    border-radius: .5rem;
+    border-radius: .8rem;
     width: 100%;
     height: 100%;
-    padding: 3rem;
+    padding: 1rem;
     gap: 1rem;
 }
 
@@ -321,7 +330,7 @@ body {
     display: flex;
     width: 40%;
     height: auto;
-    padding: 1.2rem;
+    padding: 1rem;
 }
 
 .servicio_contenedor--imagen img {
@@ -351,8 +360,8 @@ body {
     justify-content: center;
     align-items: center;
     background: white;
-    padding: 8rem 2rem 8rem 2rem;
-    gap: 3rem;
+    padding: 10rem 2rem 8rem 2rem;
+    gap: 1.5rem;
 }
 
 .nuestros-clientes_contenido {
@@ -362,7 +371,7 @@ body {
     align-items: center;
     width: 90%;
     height: auto;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem .5rem 2rem;
     gap: 2rem;
 }
 
@@ -437,17 +446,17 @@ body {
     width: 100%;
     height: auto;
     padding: 2rem;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .contenedor_casos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 .casos_logo {
-    width: 15rem;
+    width: 10rem;
     height: auto;
 }
 
@@ -466,7 +475,7 @@ body {
     justify-content: center;
     align-items: center;
     background: #5E5E5E;
-    padding: 8rem 3rem 8rem 3rem;
+    padding: 12rem 3rem 8rem 3rem;
     gap: 3rem;
 }
 
@@ -1346,12 +1355,15 @@ textarea::placeholder {
         line-height: 162.5%;
     }
 
-    .quienes-somos_contenedor-imagen {
+    .quienes-somos_imagen {
         display: flex;
+        background: url(quienes-somos.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
         flex-direction: column;
         align-items: center;
         width: 70%;
-        height: 26rem;
+        height: 100%;
         padding: 5px;
     }
 
