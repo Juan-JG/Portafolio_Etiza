@@ -24,7 +24,7 @@ body {
     opacity: 0;
     transition: opacity 0.5s;
 }
-/* Generales */
+/* Estilos de texto */
 .texto_titulo {
     color: #6B6B6B;
     font-size: 3rem;
@@ -59,41 +59,15 @@ body {
     font-weight: 400;
 }
 /* Header */
+
 .navbar {
     height: auto;
     transition: all 0.5s;
     padding: 3rem 6rem 1rem 6rem !important;
 }
 
-.nav-dark {
-    color: #5D5D5D;
-}
-
-#navbarNav {
-    justify-content: flex-start;
-}
-
-.navbar_icon {
-    display: flex;
-    content: url(etiza_logoblanco.svg);
-    flex-direction: row;
-    align-items: center;
-    width: 10rem;
-    height: auto;
-}
-
-.navbar_icon--scroll {
-    display: flex;
-    content: url(etiza_logocolor.png);
-    flex-direction: row;
-    align-items: center;
-    width: 10rem;
-    height: auto;
-}
-
-.navbar-scrolled {
-    background-color: white;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+.navbar a {
+    color: white;
 }
 
 .nav-link {
@@ -104,19 +78,18 @@ body {
     color: inherit;
     font-weight: bold;
 }
-
-.navbar-nav .nav-item .nav-link {
-    color: white !important;
+#navbarNav {
+    justify-content: flex-start;
 }
 
-.navbar-scrolled .navbar-nav .nav-item .nav-link {
-    color: #5D5D5D !important;
+.navbar_logo {
+    display: flex;
+    content: url(etiza_logoblanco.svg);
+    flex-direction: row;
+    align-items: center;
+    width: 10rem;
+    height: auto;
 }
-
-.icon-dark {
-    color: black !important;
-}
-
 .fas {
     font-size: 2rem;
 }
@@ -127,6 +100,28 @@ body {
 
 .navbar-collapse {
     margin-top: 1rem;
+}
+
+/* Navbar al hacer scroll */
+
+.navbar-white {
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+.navbar-white a {
+    color: #474646;
+}
+.navbar_logo--scroll {
+    display: flex;
+    content: url(etiza_logocolor.png);
+    flex-direction: row;
+    align-items: center;
+    width: 10rem;
+    height: auto;
+}
+
+.navbar-white i {
+    color: #474646;
 }
 
 /* Banner */
@@ -1177,13 +1172,14 @@ textarea::placeholder {
 
     /*H E A D E R*/
     .navbar {
+        display: flex !important;
+        flex-direction: row !important;
         height: auto;
         transition: all 0.5s;
         padding: 3rem 6rem 3rem 6rem !important;
-    }
-
-    .nav-dark {
-        color: #5D5D5D;
+        text-align: center;
+        justify-content: center !important;
+        gap: 15rem;
     }
 
     #navbarNav {
@@ -1195,7 +1191,7 @@ textarea::placeholder {
         content: url(etiza_logoblanco.svg);
         flex-direction: row;
         align-items: center;
-        width: 200px;
+        width: 10rem;
         height: auto;
     }
 
@@ -1204,13 +1200,8 @@ textarea::placeholder {
         content: url(etiza_logocolor.png);
         flex-direction: row;
         align-items: center;
-        width: 200px;
-        height: auto;
-    }
-
-    .navbar-scrolled {
-        background-color: white;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        width: 10rem;
+    height: auto;
     }
 
     .nav-link {
@@ -1221,15 +1212,6 @@ textarea::placeholder {
         color: inherit;
         font-weight: bold;
     }
-
-    .navbar-nav .nav-item .nav-link {
-        color: white !important;
-    }
-
-    .navbar-scrolled .navbar-nav .nav-item .nav-link {
-        color: #5D5D5D !important;
-    }
-
     .icon-dark {
         color: black !important;
     }
@@ -1240,14 +1222,6 @@ textarea::placeholder {
 
     .fa-bars {
         color: white;
-    }
-
-    .nav-item {
-        padding: 1rem;
-    }
-
-    .nav-link {
-        text-align: center;
     }
 
     /* Banner */

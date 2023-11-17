@@ -1,31 +1,33 @@
-const navEl = document.querySelector('.navbar');
-const navLinks = document.querySelectorAll('.nav-link');
-const toggler = document.querySelector('.fa-bars');
-const banner = document.querySelector('.banner');
-const bannerText = document.querySelector('.banner-texto');
-const bannerColor = document.querySelector('.navbar-toggler-icon');
-const navbarIcon = document.querySelector('.navbar_icon');
+const navBarBackground = document.querySelector('.navbar');
+const navBarToggler = document.querySelector('.navbar-toggler-icon');
+const navbarLogo = document.querySelector('.navbar_logo');
 
 // Function to toggle the solid color background of the banner
-function toggleBannerBackground() {
-    banner.classList.toggle('solid-background');
-    bannerText.classList.toggle('color-text');
+
+function toggleNavbarBackground() {
+    if (window.scrollY == 0) {
+        navEl.classList.add('navbar-blue');
+        navEl.classList.remove('navbar-transparent');
+    } else {
+        navEl.classList.remove('navbar-blue');
+        navEl.classList.add('navbar-transparent');
+    }
 }
 
 // Event listener for the toggler button
-bannerColor.addEventListener('click', toggleBannerBackground);
+
+navBarToggler.addEventListener('click', toggleNavbarBackground);
+
+ 
+// Funcion - Transparente a blanco al hacer scroll en versión desktop
 
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 56) {
-        navEl.classList.add('navbar-scrolled');
-        navLinks.forEach(link => link.classList.add('nav-dark'));
-        toggler.classList.add('icon-dark');
-        navbarIcon.classList.add('navbar_icon--scroll');
+        navBarBackground.classList.add('navbar-white');
+        navbarLogo.classList.add('navbar_logo--scroll');
     } else {
-        navEl.classList.remove('navbar-scrolled');
-        navLinks.forEach(link => link.classList.remove('nav-dark'));
-        toggler.classList.remove('icon-dark');
-        navbarIcon.classList.remove('navbar_icon--scroll');
+        navBarBackground.classList.remove('navbar-white');
+        navbarLogo.classList.remove('navbar_logo--scroll');
     }
 });
 
