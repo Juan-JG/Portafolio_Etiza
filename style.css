@@ -644,6 +644,17 @@ textarea::placeholder {
 .footer_contenedor--der span {
     font-weight: bold;
 }
+.contenedor-logo_footer {
+    width: 5rem;
+    height: 5rem;
+}
+
+.footer_logo {
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+    color: white;
+}    
 .footer_redes-sociales {
     color: #fff;
     font-size: 40px;
@@ -1899,10 +1910,16 @@ textarea::placeholder {
 
     .footer_etiza-logo {
         padding: 0;
+        width: 20%;
+        height: auto;
     }
 
     .logo_e {
-        width: 8rem;
+        width: 100%;
+        height: auto;
+    }
+    .logo_user {
+        width: 100%;
         height: auto;
     }
 
@@ -2851,17 +2868,6 @@ _________________________________________________________*/
         padding: 0;
         width: 100%;
     }
-
-    .footer_etiza-logo {
-        padding: 0;
-    }
-
-    .logo_e {
-        width: 6rem;
-        height: auto;
-        padding-top: 0;
-    }
-
     .footer_texto {
         width: 80%;
         color: #FFF;
