@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
             navBarLogo.classList.add('navbar-blue--logo');
         }
     }
-
+ 
     navBarToggler.addEventListener('click', debounce(toggleNavbar, 300));
 
     window.addEventListener('scroll', () => {
@@ -26,13 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Set a short delay for the body opacity to ensure styles are applied before revealing the content
     setTimeout(() => {
         body.style.opacity = '1';
     }, 100);
 });
 
-// Debounce function to prevent rapid firing of the toggleNavbar function
 function debounce(func, wait) {
     let timeout;
     return function () {
