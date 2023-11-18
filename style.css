@@ -1450,7 +1450,7 @@ textarea::placeholder {
 
     .contacto {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         background: #5E5E5E;
         padding: 15rem 1rem 3rem 1rem;
         width: 100%;
