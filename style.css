@@ -109,7 +109,7 @@ body {
 
 .navbar_logo {
     display: flex;
-    content: url(etiza_logoblanco.svg);
+    content: url(img/etiza_logoblanco.svg);
     flex-direction: row;
     align-items: center;
     width: 10rem;
@@ -141,7 +141,7 @@ body {
 
 .navbar_logo--scroll {
     display: flex;
-    content: url(etiza_logocolor.png);
+    content: url(img/etiza_logocolor.png);
     flex-direction: row;
     align-items: center;
     width: 10rem;
@@ -175,7 +175,7 @@ body {
 }
 
 .banner--home {
-    background: url(banner_home.png);
+    background: url(img/banner_home.webp);
     background-position: center center;
     padding-top: 15rem;
     padding-bottom: 2rem;
@@ -189,21 +189,21 @@ body {
 }
 
 .banner--enac {
-    background: url(banner_enac.png);
+    background: url(img/banner_enac.webp);
 }
 
 .banner--autonoma {
-    background: url(banner_autonoma.png);
+    background: url(img/banner_autonoma.webp);
     background-position: center right;
 }
 
 .banner--aiep {
-    background: url(banner_aiep.png);
+    background: url(img/banner_aiep.webp);
     background-position: center left;
 }
 
 .banner--inacap {
-    background: url(banner_inacap.png);
+    background: url(img/banner_inacap.webp);
     background-position: center right;
 }
 
@@ -265,7 +265,7 @@ body {
 .quienes-somos_imagen {
     display: flex;
     flex-direction: column;
-    background-image: url(quienes-somos.jpeg);
+    background-image: url(img/quienes-somos.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -318,7 +318,7 @@ body {
     height: auto;
     justify-content: center;
     align-items: center;
-    background: url(animaciones_background.png);
+    background: url(img/seccion_background.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -433,7 +433,7 @@ body {
 }
 
 .enac a:hover {
-    content: url(enac_hover.png);
+    content: url(img/enac_hover.png);
     transition: all 25s ease-in;
 }
 
@@ -442,7 +442,7 @@ body {
 }
 
 .autonoma a:hover {
-    content: url(autonoma_hover.png);
+    content: url(img/autonoma_hover.webp);
     transition: all 25s ease-in;
 }
 
@@ -451,7 +451,7 @@ body {
 }
 
 .aiep a:hover {
-    content: url(aiep_hover.png);
+    content: url(img/aiep_hover.webp);
     transition: all 25s ease-in;
 }
 
@@ -460,7 +460,7 @@ body {
 }
 
 .inacap a:hover {
-    content: url(inacap_hover.png);
+    content: url(img/inacap_hover.png);
     transition: all 25s ease-in;
 }
 
@@ -763,7 +763,7 @@ textarea::placeholder {
     align-items: center;
     width: 100%;
     height: auto;
-    background: url(animaciones_background.png);
+    background: url(img/seccion_background.webp);
     background-size: cover;
     background-position: center;
     padding: 7rem 0 7rem 0;
@@ -899,7 +899,7 @@ textarea::placeholder {
     align-items: center;
     width: 100%;
     height: auto;
-    background: url(animaciones_background.png);
+    background: url(img/seccion_background.webp);
     background-size: cover;
     background-position: center;
     padding: 7rem 0 7rem 0;
@@ -1016,7 +1016,7 @@ textarea::placeholder {
     }
 
     .navbar-blue--logo {
-        content: url(etiza_logoblanco.svg);
+        content: url(img/etiza_logoblanco.svg);
     }
 
     .nav-link {
@@ -1168,7 +1168,7 @@ textarea::placeholder {
     .quienes-somos_imagen {
         display: flex;
         flex-direction: column;
-        background-image: url(quienes-somos.jpeg);
+        background-image: url(img/quienes-somos.webp);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -1183,7 +1183,7 @@ textarea::placeholder {
     .nuestros-servicios {
         display: flex;
         flex-direction: column;
-        background: url(animaciones_background.png);
+        background: url(img/seccion_background.webp);
         background-size: cover;
         background-position: center;
         justify-content: center;
@@ -1536,7 +1536,7 @@ textarea::placeholder {
         }
 
         .banner--home {
-            background: url(banner_home.png);
+            background: url(img/banner_home.png);
             background-size: cover;
             background-position: center center;
             overflow: hidden;
