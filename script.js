@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 navBarBackground.classList.add('navbar-blue');
                 navBarLogo.classList.add('navbar-blue--logo');
             }
-    
             if (this.hash !== "") {
                 var hash = this.hash;
                 $('.navbar-collapse').collapse('hide');

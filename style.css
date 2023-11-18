@@ -1325,7 +1325,7 @@ textarea::placeholder {
         justify-content: space-evenly;
         align-items: center;
         background: white;
-        padding: 3rem 1rem 3rem 1rem;
+        padding: 15rem 1rem 3rem 1rem;
         gap: 1rem;
     }
 
@@ -1393,7 +1393,7 @@ textarea::placeholder {
         align-items: center;
         width: 100%;
         height: auto;
-        padding: 60px 10px 60px 10px;
+        padding: 15rem 1rem 5rem 1rem;
     }
 
     .nuestros-servicios_contenido {
@@ -1413,7 +1413,7 @@ textarea::placeholder {
         flex-direction: column;
         width: 100%;
         height: auto;
-        padding: 3rem 1rem 3rem 1rem;
+        padding: 15rem 1rem 3rem 1rem;
         justify-content: center;
     }
 
@@ -1450,9 +1450,9 @@ textarea::placeholder {
 
     .contacto {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         background: #5E5E5E;
-        padding: 3rem 1rem 3rem 1rem;
+        padding: 15rem 1rem 3rem 1rem;
         width: 100%;
         height: auto;
         gap: 1rem;
@@ -1694,19 +1694,12 @@ _________________________________________________________*/
     }
 
     .navbar_logo {
-        display: flex;
-        content: url(etiza_logoblanco.svg);
-        flex-direction: row;
-        align-items: center;
         width: 7rem;
         height: auto;
+       
     }
 
     .navbar_logo--scroll {
-        display: flex;
-        content: url(etiza_logocolor.png);
-        flex-direction: row;
-        align-items: center;
         width: 7rem;
         height: auto;
     }
