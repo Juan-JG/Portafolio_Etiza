@@ -1688,67 +1688,29 @@ _________________________________________________________*/
         height: auto;
         transition: all 0.1s;
         padding: 2rem !important;
-        gap: 2rem;
+        gap: 6rem;
     }
 
-    .nav-dark {
-        color: #5D5D5D;
-    }
-
-    #navbarNav {
-        justify-content: flex-end;
-    }
-
-    .navbar_icon {
+    .navbar_logo {
         display: flex;
         content: url(etiza_logoblanco.svg);
         flex-direction: row;
         align-items: center;
-        width: 80px;
+        width: 7rem;
         height: auto;
     }
 
-    .navbar_icon--scroll {
+    .navbar_logo--scroll {
         display: flex;
         content: url(etiza_logocolor.png);
         flex-direction: row;
         align-items: center;
-        width: 80px;
+        width: 7rem;
         height: auto;
     }
 
-    .navbar-scrolled {
-        background-color: white;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-    }
-
-    .nav-link {
-        font-size: 2rem;
-    }
-
-    .nav-link:hover {
-        color: inherit;
-        font-weight: bold;
-    }
-
-    .navbar-nav .nav-item .nav-link {
-        color: white !important;
-    }
-
-    .navbar-scrolled .navbar-nav .nav-item .nav-link {
-        color: #5D5D5D !important;
-    }
-
-    .icon-dark {
-        color: black !important;
-    }
-
     .fas {
-        font-size: 2rem;
-    }
-
-    .fa-bars {
-        color: white;
+        font-size: 3rem;
     }
 
     .nav-item {
@@ -1773,6 +1735,7 @@ _________________________________________________________*/
     .banner--home {
         background: url(banner_home.png);
         background-size: cover;
+        background-position: center;
         overflow: hidden;
     }
 
@@ -1800,31 +1763,19 @@ _________________________________________________________*/
         padding-bottom: 25rem;
     }
 
-    .banner_texto {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        font-family: Poppins;
-        font-size: 20px;
-        font-style: normal;
-        line-height: normal;
-        text-transform: uppercase;
-    }
-
     .banner_texto--1 {
         font-size: 20px;
+        font-weight: bold;
     }
 
     .banner_texto--2 {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: lighter;
-        font-style: bold;
     }
 
     .banner_texto--3 {
         font-size: 30px;
-        font-weight: bold;
+        font-weight: bolder;
     }
 
     /* Quienes somos */
@@ -1837,51 +1788,11 @@ _________________________________________________________*/
         justify-content: center;
         align-items: center;
         background: white;
-        padding: 10px 10px 50px 10px;
+        padding: 3rem 1rem 3rem 1rem;
         gap: 1rem;
     }
 
-    .quienes-somos_texto {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        height: auto;
-        width: 100%;
-        padding: 0;
-        gap: 0;
-    }
-
-    .quienes-somos_texto--titulo {
-        color: #6B6B6B;
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        text-align: center;
-    }
-
-    .quienes-somos_texto--titulo span {
-        color: #21B8CC;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-
-    .quienes-somos_texto--descripcion {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        color: #6B6B6B;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 162.5%;
-    }
-
-    .quienes-somos_contenedor-imagen {
+    .quienes-somos_imagen {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1890,17 +1801,12 @@ _________________________________________________________*/
         padding: 1px;
     }
 
-    .quienes-somos_imagen {
-        width: 100%;
-        height: 100%;
-        border-radius: 5px;
-    }
-
     /* Servicios */
 
     .nuestros-servicios {
         display: flex;
         flex-direction: column;
+        text-align: center;
         background: url(nuestros-servicios_fondo.png);
         background-size: cover;
         background-position: center;
@@ -1908,53 +1814,20 @@ _________________________________________________________*/
         align-items: center;
         width: 100%;
         height: auto;
-        padding: 25px 5px 25px 5px;
-    }
-
-    .nuestros-servicios_titulo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        padding: 5px;
-        text-align: center;
-        font-family: Poppins;
-        font-style: normal;
-        color: #FFF;
-        font-size: 3rem;
-        line-height: normal;
-        text-transform: uppercase;
-    }
-
-    .nuestros-servicios_titulo p {
-        font-weight: 400;
-    }
-
-    .nuestros-servicios_titulo span {
-        font-weight: 700;
+        padding: 3rem 1rem 3rem 1rem;
     }
 
     .nuestros-servicios_contenido {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        width: 95%;
         height: auto;
         padding: 0;
-        gap: 20px;
+        gap: 2rem;
     }
 
-    .nuestros-servicios_contenido--fila {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        gap: 20px;
-    }
-
-    .nuestros-servicios_contenedor {
+    .servicio_contenedor {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1968,78 +1841,17 @@ _________________________________________________________*/
         text-align: center;
     }
 
-    .nuestros-servicios_contenedor--imagen {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 50%;
-        height: auto;
-        padding: 10px;
-    }
-
-    .nuestros-servicios_contenedor--imagen img {
-        width: 80%;
-        height: auto;
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
-
-    .nuestros-servicios_contenedor--texto {
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        width: 90%;
-        color: #FFF;
-        font-family: Poppins;
-        font-style: normal;
-        padding: 5px;
-        gap: 20px;
-    }
-
-    .nuestros-servicios_contenedor--texto h3 {
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 16px;
-    }
-
-    .nuestros-servicios_contenedor--texto p {
-        font-weight: 200;
-        font-size: 14px;
-    }
-
     /* Nuestros clientes */
 
     .nuestros-clientes {
         display: flex;
         flex-direction: column;
+        text-align: center;
         width: 100%;
         height: auto;
-        padding: 30px 5px 30px 5px;
+        padding: 3rem 1rem 3rem 1rem;
         justify-content: center;
         gap: 0;
-    }
-
-    .nuestros-clientes_titulo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        text-align: center;
-        font-family: Poppins;
-        font-style: normal;
-        color: #6B6B6B;
-        font-size: 3rem;
-        font-weight: 400;
-        line-height: normal;
-        text-transform: uppercase;
-    }
-
-    .nuestros-clientes_titulo span {
-        color: #21B8CC;
-        font-weight: 700;
     }
 
     .nuestros-clientes_contenido {
@@ -2051,18 +1863,7 @@ _________________________________________________________*/
         gap: 10px;
     }
 
-    .nuestros-clientes_contenido--fila {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 0;
-        padding-top: 0;
-        width: 100%;
-        gap: 10px;
-    }
-
-    .nuestros-clientes_contenedor {
+    .cliente_contenedor {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2074,56 +1875,6 @@ _________________________________________________________*/
         border-radius: 10px;
     }
 
-    .nuestros-clientes_imagen {
-        width: 100%;
-        height: 100%;
-        transition: transform 0.25s ease-in;
-    }
-
-    .enac {
-        display: block;
-    }
-
-    .enac a:hover {
-        content: url(enac_hover.png);
-        transition: all 25s ease-in;
-        width: 100%;
-        height: auto;
-    }
-
-    .autonoma {
-        display: block;
-    }
-
-    .autonoma a:hover {
-        content: url(autonoma_hover.png);
-        transition: all 25s ease-in;
-        width: 100%;
-        height: auto;
-    }
-
-    .aiep {
-        display: block;
-    }
-
-    .aiep a:hover {
-        content: url(aiep_hover.png);
-        transition: all 25s ease-in;
-        width: 100%;
-        height: auto;
-    }
-
-    .inacap {
-        display: block;
-    }
-
-    .inacap a:hover {
-        content: url(inacap_hover.png);
-        transition: all 25s ease-in;
-        width: 100%;
-        height: auto;
-    }
-
     .casos-exito {
         display: flex;
         flex-direction: column;
@@ -2133,93 +1884,26 @@ _________________________________________________________*/
         padding: 30px 0 50px 0;
     }
 
-    .casos-exito_titulo {
-        text-align: center;
-        font-family: Poppins;
-        font-size: 3rem;
-        font-style: normal;
-        text-transform: uppercase;
-        color: #6B6B6B;
-        font-weight: 400;
-        line-height: normal;
-        text-align: center;
-        padding: 15px 0 15px 0;
-    }
-
-    .casos-exito_titulo span {
-        color: #21B8CC;
-        font-weight: 700;
-    }
-
-    .casos-exito_clientes {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        align-items: center;
-        justify-content: center;
-        padding: 0;
-    }
-
-    .casos-exito_contenedor-logos {
+    .contenedor_casos {
         display: grid;
-        align-content: center;
+        grid-template-columns: repeat(2,1fr);
         justify-content: center;
         align-items: center;
-        grid-template-columns: repeat(1, 1fr);
-        ;
-        grid-gap: 30px;
     }
-
-    .casos-exito_logo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        box-sizing: border-box;
-        padding: 0;
-    }
-
-    .casos-exito_logo img {
-        width: 230px;
-        padding: 0;
-        height: auto;
-    }
-
     /* Contacto */
 
     .contacto {
         display: flex;
         flex-direction: column;
         background: #5E5E5E;
-        padding: 30px 0 30px 0;
+        padding: 3rem 1rem 3rem 1rem;
         width: 100%;
         height: auto;
     }
 
-    .contacto_titulo--2 {
-        visibility: visible;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        text-align: center;
-        padding: 0;
-        color: #FFF;
-        font-family: Poppins;
-        font-size: 35px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        text-transform: uppercase;
+    .contacto_titulo {
+        font-size: 2.3rem;
     }
-
-    .contacto_titulo--1 {
-        visibility: hidden;
-        width: 0;
-        height: 0;
-        padding: 0;
-    }
-
     .contacto_contenido {
         display: flex;
         flex-direction: column;
@@ -2229,41 +1913,26 @@ _________________________________________________________*/
         padding: 0;
         gap: 25px;
     }
-
+    .footer_contenedor--izq {
+        width: 100%;
+    }
     .contacto_informacion {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         padding: 0;
         width: 80%;
-        gap: 5px;
+        gap: 1px;
     }
 
-    .contacto_informacion-titulo {
+    .informacion_contenedor {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding-top: 2rem;
-        color: #FFF;
-        font-family: Poppins;
-        font-size: 35px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 162.5%;
-        /* 40.625px */
-        text-transform: uppercase;
-        width: 100%;
-        height: auto;
-    }
-
-    .contacto_informacion-contenedor {
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         width: 100%;
         height: auto;
         padding: 0;
-        gap: 80px;
+        gap: 1rem;
     }
 
     .contacto_icono {
@@ -2272,22 +1941,6 @@ _________________________________________________________*/
         font-size: 40px;
         padding: 0;
         margin: 0;
-    }
-
-    .contacto_texto {
-        color: #FFF;
-        font-family: Poppins;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 300;
-    }
-
-    .contacto_texto--titulo {
-        color: #21B8CC;
-        font-family: Poppins;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
     }
 
     .contacto_formulario {
@@ -2301,175 +1954,9 @@ _________________________________________________________*/
         gap: 6px;
     }
 
-    .contacto_formulario input {
-        width: 100%;
-        height: auto;
-        flex-shrink: 0;
-        background: #474646;
-        box-shadow: none;
-        transition: all 0.5s ease;
-        border-style: none;
-    }
-
-    .contacto_formulario textarea {
-        width: 100%;
-        height: 255px;
-        flex-shrink: 0;
-        background: #474646;
-        border-style: none;
-        border-radius: 5px;
-    }
-
-    .contacto_formulario input::placeholder,
-    textarea::placeholder {
-        color: #FFF;
-        text-align: left;
-        font-family: Poppins;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-        opacity: 0.5;
-    }
-
-    .contacto_formulario textarea,
-    [type="text"] {
-        font-size: 20px;
-        color: #afadad;
-        padding: 10px;
-    }
-
-    .contacto_formulario input[type="submit"] {
-        width: 50%;
-        height: auto;
-        padding: 15px;
-        background: #21B8CC;
-        color: #FFF;
-        text-align: center;
-        font-family: Poppins;
-        font-style: normal;
-        font-size: 1rem;
-        font-weight: 700;
-        line-height: normal;
-        text-transform: uppercase;
-        border-style: none;
-        border-radius: 5px;
-    }
-
-    .contacto_formulario input[type="submit"]:hover {
-        background: #FFF;
-        color: #21B8CC;
-    }
-
-    /* Footer */
-
-    .footer {
-        background: #21B8CC;
-        display: grid;
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        padding: 0 0 25px 0;
-        margin: 0;
-    }
-
-    .footer_contenido {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        gap: 25px;
-        padding: 55px 0 35px 0;
-    }
-
-    .footer_encabezado {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        height: 0;
-        padding: 0;
-    }
-
-    .footer_encabezado-izq {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 0;
-        padding: 0;
-        margin: 0;
-        height: auto;
-    }
-
-    .footer_contactanos-titulo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        color: #FFF;
-        font-family: Poppins;
-        font-size: 2rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        padding: 0;
-        width: 100%;
-        height: auto;
-    }
-
-    .footer_columna-izq {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 30px;
-        padding: 0 0 25px 0;
-        text-align: center;
-    }
-
-    .footer_etiza {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        margin: 0;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        width: 100%;
-    }
-    .footer_texto {
-        width: 80%;
-        color: #FFF;
-        font-family: Poppins;
-        font-size: 1.2rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        text-align: left;
-        text-align: center;
-    }
-
-    .footer_redes-sociales {
-        color: #fff;
-        font-size: 3rem;
-        gap: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        transition: all 0.3s ease;
-    }
-
-    .footer_redes-sociales i {
-        border: 5px solid white;
-        border-radius: 4rem;
-        padding: 10px;
-    }
-
     .footer_redes-sociales a {
         color: #fff;
+        font-size: 3rem;
     }
 
     .footer_redes-sociales i:hover {
@@ -2477,61 +1964,6 @@ _________________________________________________________*/
         color: #21B8CC;
     }
 
-    .footer_columna-der {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        padding: 5px;
-        gap: 3rem;
-    }
-
-    .footer_contactanos-izq {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-    }
-
-    .footer_contactanos-der {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-    }
-
-    .footer_contactanos-texto {
-        display: flex;
-        flex-direction: column;
-        color: #FFF;
-        font-family: Poppins;
-        font-size: 1.2rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        gap: 2px;
-        text-align: center;
-    }
-
-    .footer_contactanos-texto span {
-        font-weight: bolder;
-    }
-
-    .footer_titulo--1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 0;
-        padding: 0;
-        visibility: hidden;
-    }
-
-    .footer_titulo--2 {
-        width: 100%;
-        visibility: visible;
-    }
     /* ENAC */
 .banner--enac {
     height: 300px;
