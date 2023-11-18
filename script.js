@@ -13,7 +13,34 @@ document.addEventListener('DOMContentLoaded', function () {
             navBarLogo.classList.add('navbar-blue--logo');
         }
     }
- 
+    $(document).ready(function() {
+        $(".navbar-nav a").on('click', function(event) {
+    
+            if (navBarBackground.classList.contains('navbar-blue')) {
+                navBarBackground.classList.remove('navbar-blue');
+                navBarLogo.classList.remove('navbar-blue--logo');
+            } else {
+                navBarBackground.classList.add('navbar-blue');
+                navBarLogo.classList.add('navbar-blue--logo');
+            }
+    
+            if (this.hash !== "") {
+                var hash = this.hash;
+                $('.navbar-collapse').collapse('hide');
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){ 
+                    if(history.pushState) {
+                        history.pushState(null, null, hash);
+                    } else {
+                        window.location.hash = hash;
+                    }
+                });
+                event.preventDefault();
+            }
+        });
+    });
+    
     navBarToggler.addEventListener('click', debounce(toggleNavbar, 300));
 
     window.addEventListener('scroll', () => {
