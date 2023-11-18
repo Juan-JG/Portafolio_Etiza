@@ -1199,7 +1199,7 @@ textarea::placeholder {
         padding: 3rem 6rem 3rem 6rem !important;
         text-align: center;
         justify-content: center !important;
-        gap: 15rem;
+        gap: 10rem;
     }
     .navbar-close {
         gap: 3rem;
