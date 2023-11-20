@@ -177,6 +177,7 @@ body {
 .banner--home {
     background: url(img/banner_home.webp);
     background-position: center center;
+    background-size: cover;
     padding-top: 15rem;
     padding-bottom: 2rem;
     height: 60rem;
@@ -190,21 +191,26 @@ body {
 
 .banner--enac {
     background: url(img/banner_enac.webp);
+    background-position: center center;
+    background-size: cover;
 }
 
 .banner--autonoma {
     background: url(img/banner_autonoma.webp);
-    background-position: center right;
+    background-position: center center;
+    background-size: cover;
 }
 
 .banner--aiep {
     background: url(img/banner_aiep.webp);
-    background-position: center left;
+    background-position: center center;
+    background-size: cover;
 }
 
 .banner--inacap {
     background: url(img/banner_inacap.webp);
-    background-position: center right;
+    background-position: center center;
+    background-size: cover;
 }
 
 .logo--cliente {
@@ -1046,6 +1052,7 @@ textarea::placeholder {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         width: 100%;
         height: auto;
         padding: 15rem 2rem 2rem 2rem;
@@ -1066,15 +1073,15 @@ textarea::placeholder {
     }
 
     .banner--home {
-        background-position: center right;
+        background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     .banner--enac {
-        background-position: center right;
+        background-position: center center;
         background-size: cover;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
     }
 
     .banner--autonoma {
